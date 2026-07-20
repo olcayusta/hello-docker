@@ -1,11 +1,58 @@
 <!doctype html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>Konum Bazlı Alarm</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <header>
+        <h1>📍 Konum Bazlı Alarm</h1>
+        <p class="subtitle">Belirlediğin noktaya yaklaşınca alarm çalar.</p>
+    </header>
+
+    <main>
+        <section class="panel">
+            <div class="field">
+                <label for="search">Adres ara</label>
+                <div class="search-row">
+                    <input id="search" type="text" placeholder="Örn: Taksim Meydanı, İstanbul">
+                    <button id="searchBtn" type="button">Ara</button>
+                </div>
+            </div>
+
+            <div id="map"></div>
+            <p class="hint">Haritaya tıklayarak da hedef noktayı seçebilirsin.</p>
+
+            <div class="field">
+                <label for="radius">Uyarı mesafesi: <span id="radiusValue">200</span> m</label>
+                <input id="radius" type="range" min="20" max="2000" step="10" value="200">
+            </div>
+
+            <div class="field target-info">
+                <span id="targetLabel">Hedef seçilmedi</span>
+            </div>
+
+            <div class="actions">
+                <button id="startBtn" type="button" disabled>Takibi Başlat</button>
+                <button id="stopBtn" type="button" disabled>Takibi Durdur</button>
+            </div>
+
+            <div id="status" class="status">Bir hedef nokta seç ve takibi başlat.</div>
+        </section>
+    </main>
+
+    <div id="alarmOverlay" class="alarm-overlay hidden">
+        <div class="alarm-box">
+            <h2>🚨 Hedefe Ulaştın!</h2>
+            <p id="alarmDistance"></p>
+            <button id="dismissBtn" type="button">Alarmı Durdur</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
