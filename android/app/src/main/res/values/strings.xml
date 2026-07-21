@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Konum Bazlı Alarm</string>
+
+    <string name="search_hint">Örn: Taksim Meydanı, İstanbul</string>
+    <string name="search_button">Ara</string>
+    <string name="radius_label">Uyarı mesafesi: %1$d m</string>
+    <string name="target_not_set">Hedef seçilmedi</string>
+    <string name="target_set">Hedef: %1$.5f, %2$.5f</string>
+    <string name="map_hint">Haritaya dokunarak hedef noktayı seçebilirsin.</string>
+
+    <string name="start_tracking">Takibi Başlat</string>
+    <string name="stop_tracking">Takibi Durdur</string>
+
+    <string name="status_idle">Bir hedef nokta seç ve takibi başlat.</string>
+    <string name="status_tracking">Takip ediliyor…</string>
+    <string name="status_stopped">Takip durduruldu.</string>
+
+    <string name="grant_background_location_title">Arka planda konum izni gerekli</string>
+    <string name="grant_background_location_body">Uygulama kapalıyken de alarmın çalışabilmesi için Ayarlar\'dan konum iznini \"Her zaman izin ver\" olarak değiştirmen gerekiyor.</string>
+    <string name="open_settings">Ayarları Aç</string>
+
+    <string name="approximate_location_warning">Sadece yaklaşık konum izni verildi. Küçük yarıçaplarda alarm doğru tetiklenmeyebilir; Ayarlar\'dan \"Tam konum\" iznini açman önerilir.</string>
+    <string name="full_screen_intent_warning">Tam ekran alarm izni kapalı görünüyor. Açmak için ayarlara gidebilirsin.</string>
+    <string name="battery_optimization_hint">Alarmın güvenilir çalışması için pil optimizasyonunu bu uygulama için kapatman önerilir.</string>
+    <string name="disable_battery_optimization">Pil Optimizasyonunu Kapat</string>
+
+    <string name="alarm_title">🚨 Hedefe Ulaştın!</string>
+    <string name="alarm_dismiss">Durdur</string>
+</resources>

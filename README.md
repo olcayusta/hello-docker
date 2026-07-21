@@ -35,3 +35,9 @@ npx serve .
 - Konum takibi tarayıcı sekmesi açıkken çalışır; arka planda güvenilir takip
   için native bir mobil uygulama gerekir.
 - Harita ve adres arama için OpenStreetMap / Nominatim servisleri kullanılır.
+
+## Android uygulaması
+
+`android/` klasöründe, uygulama arka plandayken veya kapatıldığında da alarmın
+çalışmasını sağlayan native bir Android sürümü bulunuyor (Geofencing API). Kurulum
+ve test adımları için [android/README.md](android/README.md) dosyasına bakın.

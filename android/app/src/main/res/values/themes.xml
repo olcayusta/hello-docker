@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.LocationAlarm" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#3B82F6</item>
+        <item name="colorPrimaryDark">#1E293B</item>
+        <item name="colorAccent">#3B82F6</item>
+        <item name="android:windowBackground">#0F172A</item>
+    </style>
+</resources>
